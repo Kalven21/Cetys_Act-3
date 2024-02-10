@@ -1,0 +1,58 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Kirbo</title>
+    <style>
+        canvas {
+            background-color: white;
+            text-align: center;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+        var canvas = document.getElementById("micanvas");
+        var context = canvas.getContext("2d");
+    // body
+        context.fillStyle = "pink";
+        context.fillRect(300, 150, 300, 300); // los valores son  (x,y,hancho,alto)
+    // left foot
+        context.fillStyle = "red";
+        context.fillRect(230, 420, 140, 60);
+    // rigth foot
+        context.fillStyle = "red";
+        context.fillRect(520,420,140,60);
+    //cruz
+        context.fillStyle = "gold";
+        context.fillRect(325,300,100,20);
+        context.fillRect(387,281,18,60);
+    // eyes
+        context.fillStyle = "black";
+        context.fillRect(420, 210, 20,20);
+        context.fillRect(470, 205, 20,20);
+    // mouth
+        context.fillStyle = "black";
+        context.fillRect(395,250,120,10);
+    // mouth up
+        context.fillStyle = "black";
+        context.fillRect(380,240,15,10);
+        context.fillRect(515,240,15,10);
+    // left hand
+        context.fillStyle = "dark";
+        context.fillRect(330,280,8,40);
+        context.fillRect(370,280,8,40);
+        context.fillRect(337,320,33,8);
+    //rigth hand
+        context.fillStyle = "dark";
+        context.fillRect(530,280,8,40);
+        context.fillRect(570,280,8,40);
+        context.fillRect(537,320,33,8);
+    //pink hand
+        context.fillStyle = "pink";
+        context.fillRect(338,300,32,20);
+    }
+    </script>
+    </head>
+    <body>
+        <canvas id="micanvas" width="800" height="600"></canvas>
+    </body>
+</html>
